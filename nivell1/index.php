@@ -52,7 +52,20 @@ de2en2tots(21);
 
 //Exercici 4
 echo "<br><br><b>Exercici 4</b><br>";
-
+function de2en2defecte($valor=10){
+    if($valor & 1){
+        $x = -1;
+    }else{
+        $x = 0;
+    }
+    
+    while($x<$valor-1){
+        $x++;
+        $x++;
+        echo $x . ", ";
+    }
+}
+de2en2defecte();
 
 
 //Exercici 5
@@ -76,5 +89,8 @@ function grauEstudiant($nota){
             echo "La nota no es correcta";
     }
 }
-
 grauEstudiant(30);
+
+
+//Exercici 6
+echo "<br><br><b>Exercici 5</b><br>";
