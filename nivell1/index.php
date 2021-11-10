@@ -93,4 +93,21 @@ grauEstudiant(30);
 
 
 //Exercici 6
-echo "<br><br><b>Exercici 5</b><br>";
+echo "<br><br><b>Exercici 6</b><br>";
+
+function isBitten(){
+    
+    $x=rand(1,2);
+    
+    if($x==1){
+        
+        echo "true";
+        return true;
+    }else{
+        
+        echo "false";
+        return false;
+    }
+}
+
+isBitten();
