@@ -29,3 +29,21 @@ function de2en2(){
 }
 de2en2();
 
+
+//Exercici 3
+echo "<br><br><b>Exercici 2</b><br>";
+
+function de2en2tots($valor){
+    if($valor & 1){
+        $x = -1;
+    }else{
+        $x = 0;
+    }
+    
+    while($x<$valor-1){
+        $x++;
+        $x++;
+        echo $x . ", ";
+    }
+}
+de2en2tots(21);
