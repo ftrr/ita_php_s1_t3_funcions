@@ -31,7 +31,7 @@ de2en2();
 
 
 //Exercici 3
-echo "<br><br><b>Exercici 2</b><br>";
+echo "<br><br><b>Exercici 3</b><br>";
 
 function de2en2tots($valor){
     if($valor & 1){
@@ -47,3 +47,34 @@ function de2en2tots($valor){
     }
 }
 de2en2tots(21);
+
+
+
+//Exercici 4
+echo "<br><br><b>Exercici 4</b><br>";
+
+
+
+//Exercici 5
+echo "<br><br><b>Exercici 5</b><br>";
+
+function grauEstudiant($nota){
+    switch($nota){
+        case ($nota>=60);
+            echo "Primera divisió";
+            break;
+        case ($nota>=45 && $nota<=59) ;
+            echo "Segona divisió";
+            break;
+        case ($nota>=33 && $nota<=44) ;
+            echo "Tercera divisió";
+            break;
+        case ($nota<33) ;
+            echo "A reprovar";
+            break;
+        default:
+            echo "La nota no es correcta";
+    }
+}
+
+grauEstudiant(30);
