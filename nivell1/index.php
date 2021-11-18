@@ -1,6 +1,6 @@
 <?php
 
-//Exercici 2
+//Exercici 1
 echo "<br><b>Exercici 1</b><br>";
 
 
@@ -22,8 +22,7 @@ echo "<br><br><b>Exercici 2</b><br>";
 function de2en2(){
     $x = 0;
     while($x<10){
-        $x++;
-        $x++;
+        $x+=2;
         echo $x . ", ";
     }
 }
@@ -37,12 +36,11 @@ function de2en2tots($valor){
     if($valor & 1){
         $x = -1;
     }else{
-        $x = 0;
+        $x = -2;
     }
     
     while($x<$valor-1){
-        $x++;
-        $x++;
+        $x+=2;
         echo $x . ", ";
     }
 }
@@ -56,12 +54,11 @@ function de2en2defecte($valor=10){
     if($valor & 1){
         $x = -1;
     }else{
-        $x = 0;
+        $x = -2;
     }
     
     while($x<$valor-1){
-        $x++;
-        $x++;
+        $x+=2;
         echo $x . ", ";
     }
 }
@@ -99,12 +96,10 @@ function isBitten(){
     
     $x=rand(1,2);
     
-    if($x==1){
-        
+    if($x==1){   
         echo "true";
         return true;
-    }else{
-        
+    }else{       
         echo "false";
         return false;
     }

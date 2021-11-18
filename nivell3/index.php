@@ -11,7 +11,7 @@ function erastotenes($tableLimit){
        $taula[$i] = true;
     }
 
-    $taula[2]=true;
+    //$taula[2]=true;
 
     for($i=2; $i<=$tableLimit; $i++)
     {
